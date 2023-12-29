@@ -1,0 +1,350 @@
+2023-10-16 22:07:36|DEBUG|Created account: 1
+2023-10-17 19:37:27|ERROR|TypeError: '__init__() takes 1 positional argument but 2 were given'
+2023-10-17 19:39:44|ERROR|TypeError: '__init__() takes 1 positional argument but 2 were given'
+2023-10-17 19:41:58|ERROR|AttributeError: "'BankCLI' object has no attribute '_save'"
+2023-10-17 19:42:40|ERROR|TypeError: "Bank.add_account() missing 1 required positional argument: 'session'"
+2023-10-17 19:47:58|ERROR|TypeError: "__init__() missing 1 required positional argument: 'session'"
+2023-10-17 19:49:09|DEBUG|Created account: 1
+2023-10-17 19:49:09|ERROR|FlushError: 'Instance <CheckingAccount at 0x102391210> has a NULL identity key.  If this is an auto-generated value, check that the database table allows generation of new primary key values, and that the mapped Column object is configured to expect these generated values.  Ensure also that this flush() is not occurring at an inappropriate time, such as within a load() event.'
+2023-10-17 19:54:23|DEBUG|Created account: 1
+2023-10-17 19:54:23|ERROR|OperationalError: "(sqlite3.OperationalError) table accounts has no column named _account_number\n[SQL: INSERT INTO accounts (_account_number, _bank_id, _account_type) VALUES (?, ?, ?)]\n[parameters: (1, 1, 'checkingaccounts')]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)"
+2023-10-17 19:56:46|DEBUG|Created account: 1
+2023-10-17 19:56:59|DEBUG|Created account: 2
+2023-10-17 19:58:28|DEBUG|Created transaction: 2, 1000
+2023-10-17 19:59:09|DEBUG|Created transaction: 1, 220202
+2023-10-17 20:32:20|DEBUG|Created account: 1
+2023-10-17 20:32:20|ERROR|IntegrityError: "(sqlite3.IntegrityError) UNIQUE constraint failed: accounts._account_number\n[SQL: INSERT INTO accounts (_account_number, _bank_id, _account_type) VALUES (?, ?, ?)]\n[parameters: (1, 2, 'checkingaccounts')]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)"
+2023-10-17 20:36:39|ERROR|TypeError: 'BankCLI.__init__() takes 1 positional argument but 2 were given'
+2023-10-17 20:36:50|ERROR|AttributeError: "'BankCLI' object has no attribute '_selected_account'"
+2023-10-17 20:38:28|DEBUG|Created transaction: 1, 200000
+2023-10-18 11:12:14|DEBUG|Created transaction: 1, 2000
+2023-10-18 11:13:14|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:17:16|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:17:44|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:18:07|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:20:29|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:23:03|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:27:13|DEBUG|Created transaction: 1, 1999
+2023-10-18 11:27:38|ERROR|TypeError: "Account.add_transaction() missing 1 required positional argument: 'session'"
+2023-10-18 11:44:46|DEBUG|Created transaction: 1, 8.1959
+2023-10-18 11:44:46|DEBUG|Triggered interest and fees
+2023-10-18 11:45:27|ERROR|TypeError: '__init__() takes 2 positional arguments but 3 were given'
+2023-10-18 11:45:48|DEBUG|Created account: 3
+2023-10-18 11:45:48|ERROR|InvalidRequestError: "Object '<CheckingAccount at 0x1070d66d0>' is already attached to session '2' (this is '1')"
+2023-10-18 11:48:12|DEBUG|Created account: 3
+2023-10-18 11:48:12|ERROR|InvalidRequestError: "Object '<CheckingAccount at 0x10246a910>' is already attached to session '2' (this is '1')"
+2023-10-18 11:48:22|DEBUG|Created account: 3
+2023-10-18 11:48:22|ERROR|InvalidRequestError: "Object '<CheckingAccount at 0x106ad1fd0>' is already attached to session '2' (this is '1')"
+2023-10-18 11:56:12|DEBUG|Created account: 3
+2023-10-18 11:56:52|DEBUG|Created transaction: 3, -10
+2023-10-18 11:56:58|ERROR|ValueError: 'max() arg is an empty sequence'
+2023-10-18 12:00:54|DEBUG|Created account: 4
+2023-10-18 12:01:08|DEBUG|Created transaction: 4, 2000000
+2023-10-18 12:01:11|ERROR|TypeError: "unsupported operand type(s) for *: 'decimal.Decimal' and 'float'"
+2023-10-18 12:08:23|DEBUG|Created transaction: 4, 200000
+2023-10-18 12:09:50|DEBUG|Created transaction: 4, 20000
+2023-10-18 12:09:59|DEBUG|Created transaction: 4, 82.0000000
+2023-10-18 12:09:59|DEBUG|Triggered interest and fees
+2023-10-18 12:11:02|DEBUG|Created transaction: 3, 21
+2023-10-18 12:11:05|DEBUG|Created transaction: 3, 0.0168000000
+2023-10-18 12:11:05|DEBUG|Created transaction: 3, -5.4400
+2023-10-18 12:11:05|DEBUG|Triggered interest and fees
+2023-10-18 12:11:49|DEBUG|Created transaction: 3, 0.0168000000
+2023-10-18 12:11:49|DEBUG|Created transaction: 3, -5.4400
+2023-10-18 12:11:49|DEBUG|Triggered interest and fees
+2023-10-18 13:17:47|DEBUG|Created transaction: 4, 2011
+2023-10-18 13:17:50|DEBUG|Created transaction: 4, 90.5813000
+2023-10-18 13:17:50|DEBUG|Triggered interest and fees
+2023-10-18 13:27:40|DEBUG|Created account: 1
+2023-10-18 13:27:40|DEBUG|Saved to bank.db
+2023-10-18 13:28:56|DEBUG|Created transaction: 1, -10000
+2023-10-18 14:16:15|DEBUG|Loaded from bank.db
+2023-10-18 14:16:15|DEBUG|Saved to bank.db
+2023-10-19 10:28:05|DEBUG|Loaded from bank.db
+2023-10-19 10:28:05|DEBUG|Saved to bank.db
+2023-10-19 10:28:16|DEBUG|Created transaction: 1, 3030
+2023-10-19 10:28:16|DEBUG|Saved to bank.db
+2023-10-19 10:28:43|DEBUG|Loaded from bank.db
+2023-10-19 10:28:43|DEBUG|Saved to bank.db
+2023-10-19 10:29:07|DEBUG|Created transaction: 1, -150
+2023-10-19 10:29:07|DEBUG|Saved to bank.db
+2023-10-19 10:29:10|DEBUG|Created transaction: 1, 2.30400000
+2023-10-19 10:29:10|DEBUG|Triggered interest and fees
+2023-10-19 10:29:10|DEBUG|Saved to bank.db
+2023-10-19 10:29:34|DEBUG|Loaded from bank.db
+2023-10-19 10:29:34|DEBUG|Saved to bank.db
+2023-10-19 10:30:15|DEBUG|Created transaction: 1, 2.30400000
+2023-10-19 10:30:15|DEBUG|Triggered interest and fees
+2023-10-19 10:30:15|DEBUG|Saved to bank.db
+2023-10-19 10:30:19|DEBUG|Loaded from bank.db
+2023-10-19 10:30:19|DEBUG|Saved to bank.db
+2023-10-19 10:30:32|DEBUG|Created transaction: 1, 2.30400000
+2023-10-19 10:30:32|DEBUG|Triggered interest and fees
+2023-10-19 10:30:32|DEBUG|Saved to bank.db
+2023-10-19 10:30:40|DEBUG|Loaded from bank.db
+2023-10-19 10:30:40|DEBUG|Saved to bank.db
+2023-10-19 10:33:39|DEBUG|Created transaction: 1, 1919
+2023-10-19 10:33:39|DEBUG|Saved to bank.db
+2023-10-19 10:33:42|DEBUG|Created transaction: 1, 3.83920000
+2023-10-19 10:33:42|DEBUG|Triggered interest and fees
+2023-10-19 10:33:42|DEBUG|Saved to bank.db
+2023-10-19 10:33:49|DEBUG|Loaded from bank.db
+2023-10-19 10:33:49|DEBUG|Saved to bank.db
+2023-10-19 10:35:28|DEBUG|Loaded from bank.db
+2023-10-19 10:35:28|DEBUG|Saved to bank.db
+2023-10-19 10:35:33|DEBUG|Created transaction: 1, 3.83920000
+2023-10-19 10:35:33|DEBUG|Triggered interest and fees
+2023-10-19 10:35:33|DEBUG|Saved to bank.db
+2023-10-19 10:37:45|DEBUG|Loaded from bank.db
+2023-10-19 10:37:45|DEBUG|Saved to bank.db
+2023-10-19 10:37:49|DEBUG|Created transaction: 1, 3.83920000
+2023-10-19 10:37:49|DEBUG|Triggered interest and fees
+2023-10-19 10:37:49|DEBUG|Saved to bank.db
+2023-10-19 10:40:26|DEBUG|Loaded from bank.db
+2023-10-19 10:40:26|DEBUG|Saved to bank.db
+2023-10-19 10:40:37|DEBUG|Created transaction: 1, 12
+2023-10-19 10:40:37|DEBUG|Saved to bank.db
+2023-10-19 10:40:40|DEBUG|Created transaction: 1, 3.84880000
+2023-10-19 10:40:40|DEBUG|Triggered interest and fees
+2023-10-19 10:40:40|DEBUG|Saved to bank.db
+2023-10-19 10:41:24|DEBUG|Loaded from bank.db
+2023-10-19 10:41:24|DEBUG|Saved to bank.db
+2023-10-19 10:41:29|DEBUG|Created transaction: 1, 3.84880000
+2023-10-19 10:41:29|DEBUG|Triggered interest and fees
+2023-10-19 10:41:29|DEBUG|Saved to bank.db
+2023-10-19 10:41:32|DEBUG|Loaded from bank.db
+2023-10-19 10:41:32|DEBUG|Saved to bank.db
+2023-10-19 21:40:56|DEBUG|Loaded from bank.db
+2023-10-19 21:40:56|DEBUG|Saved to bank.db
+2023-10-19 21:48:07|DEBUG|Loaded from bank.db
+2023-10-19 21:48:07|DEBUG|Saved to bank.db
+2023-10-19 21:48:11|DEBUG|Created account: 10
+2023-10-19 21:48:17|DEBUG|Loaded from bank.db
+2023-10-19 21:48:17|DEBUG|Saved to bank.db
+2023-10-19 21:48:33|DEBUG|Created transaction: 10, 10002
+2023-10-19 21:48:33|DEBUG|Saved to bank.db
+2023-10-19 21:49:40|DEBUG|Loaded from bank.db
+2023-10-19 21:49:40|DEBUG|Saved to bank.db
+2023-10-19 21:49:50|DEBUG|Created transaction: 10, 41.0082000
+2023-10-19 21:49:50|DEBUG|Triggered interest and fees
+2023-10-19 21:49:50|DEBUG|Saved to bank.db
+2023-10-19 21:51:43|DEBUG|Loaded from bank.db
+2023-10-19 21:51:43|DEBUG|Saved to bank.db
+2023-10-19 21:51:59|DEBUG|Created transaction: 8, 2200220
+2023-10-19 21:51:59|DEBUG|Saved to bank.db
+2023-10-19 21:53:47|DEBUG|Loaded from bank.db
+2023-10-19 21:53:47|DEBUG|Saved to bank.db
+2023-10-19 21:53:59|DEBUG|Created transaction: 5, 20202
+2023-10-19 21:53:59|DEBUG|Saved to bank.db
+2023-10-19 21:54:49|DEBUG|Loaded from bank.db
+2023-10-19 21:54:49|DEBUG|Saved to bank.db
+2023-10-19 21:55:14|DEBUG|Created transaction: 4, 20202
+2023-10-19 21:55:14|DEBUG|Saved to bank.db
+2023-10-19 21:56:55|DEBUG|Loaded from bank.db
+2023-10-19 21:56:55|DEBUG|Saved to bank.db
+2023-10-19 21:57:07|DEBUG|Created transaction: 5, 16.1616000
+2023-10-19 21:57:07|DEBUG|Triggered interest and fees
+2023-10-19 21:57:07|DEBUG|Saved to bank.db
+2023-10-19 21:57:16|DEBUG|Created transaction: 4, 16.1616000
+2023-10-19 21:57:16|DEBUG|Triggered interest and fees
+2023-10-19 21:57:16|DEBUG|Saved to bank.db
+2023-10-19 21:58:43|DEBUG|Loaded from bank.db
+2023-10-19 21:58:43|DEBUG|Saved to bank.db
+2023-10-19 21:58:51|DEBUG|Created transaction: 8, 1760.17600
+2023-10-19 21:58:51|DEBUG|Triggered interest and fees
+2023-10-19 21:58:51|DEBUG|Saved to bank.db
+2023-10-20 16:54:13|DEBUG|Loaded from bank.db
+2023-10-20 16:54:13|DEBUG|Saved to bank.db
+2023-10-20 16:54:32|DEBUG|Created transaction: 1, 33
+2023-10-20 16:54:32|DEBUG|Saved to bank.db
+2023-10-20 16:54:39|DEBUG|Created transaction: 1, 709.653527
+2023-10-20 16:54:39|DEBUG|Triggered interest and fees
+2023-10-20 16:54:39|DEBUG|Saved to bank.db
+2023-10-20 17:32:06|DEBUG|Loaded from bank.db
+2023-10-20 17:32:06|DEBUG|Saved to bank.db
+2023-10-20 17:47:27|DEBUG|Loaded from bank.db
+2023-10-20 17:47:27|DEBUG|Saved to bank.db
+2023-10-20 17:47:52|DEBUG|Created transaction: 6, 1000
+2023-10-20 17:47:52|DEBUG|Saved to bank.db
+2023-10-20 17:47:58|DEBUG|Created transaction: 6, 0.800000000
+2023-10-20 17:47:58|DEBUG|Triggered interest and fees
+2023-10-20 17:47:58|DEBUG|Saved to bank.db
+2023-10-20 17:49:34|DEBUG|Loaded from bank.db
+2023-10-20 17:49:34|DEBUG|Saved to bank.db
+2023-10-20 17:50:10|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:10|DEBUG|Saved to bank.db
+2023-10-20 17:50:15|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:15|DEBUG|Saved to bank.db
+2023-10-20 17:50:17|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:17|DEBUG|Saved to bank.db
+2023-10-20 17:50:48|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:48|DEBUG|Saved to bank.db
+2023-10-20 17:50:53|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:53|DEBUG|Saved to bank.db
+2023-10-20 17:50:58|DEBUG|Created transaction: 6, 1002
+2023-10-20 17:50:58|DEBUG|Saved to bank.db
+2023-10-20 17:51:32|DEBUG|Loaded from bank.db
+2023-10-20 17:51:32|DEBUG|Saved to bank.db
+2023-10-20 17:51:50|DEBUG|Created transaction: 4, 200
+2023-10-20 17:51:50|DEBUG|Saved to bank.db
+2023-10-20 17:52:13|DEBUG|Created transaction: 4, 16.3345293
+2023-10-20 17:52:13|DEBUG|Triggered interest and fees
+2023-10-20 17:52:13|DEBUG|Saved to bank.db
+2023-10-20 18:59:30|DEBUG|Loaded from bank.db
+2023-10-20 18:59:30|DEBUG|Saved to bank.db
+2023-10-20 19:00:11|DEBUG|Created account: 11
+2023-10-20 19:01:48|DEBUG|Loaded from bank.db
+2023-10-20 19:01:48|DEBUG|Saved to bank.db
+2023-10-20 19:02:21|DEBUG|Loaded from bank.db
+2023-10-20 19:02:21|DEBUG|Saved to bank.db
+2023-10-20 19:06:14|DEBUG|Loaded from bank.db
+2023-10-20 19:06:14|DEBUG|Saved to bank.db
+2023-10-20 19:06:18|DEBUG|Created account: 12
+2023-10-20 19:06:48|DEBUG|Loaded from bank.db
+2023-10-20 19:06:48|DEBUG|Saved to bank.db
+2023-10-20 19:06:52|DEBUG|Created account: 13
+2023-10-20 19:07:07|DEBUG|Loaded from bank.db
+2023-10-20 19:07:07|DEBUG|Saved to bank.db
+2023-10-20 19:09:50|DEBUG|Loaded from bank.db
+2023-10-20 19:09:50|DEBUG|Saved to bank.db
+2023-10-20 19:14:03|DEBUG|Loaded from bank.db
+2023-10-20 19:14:03|DEBUG|Saved to bank.db
+2023-10-20 19:14:24|DEBUG|Loaded from bank.db
+2023-10-20 19:14:24|DEBUG|Saved to bank.db
+2023-10-20 19:22:17|DEBUG|Loaded from bank.db
+2023-10-20 19:22:17|DEBUG|Saved to bank.db
+2023-10-20 19:22:29|DEBUG|Created transaction: 8, 10
+2023-10-20 19:22:29|DEBUG|Saved to bank.db
+2023-10-20 19:22:31|DEBUG|Created transaction: 8, 10
+2023-10-20 19:22:31|DEBUG|Saved to bank.db
+2023-10-20 19:22:33|DEBUG|Created transaction: 8, 10
+2023-10-20 19:22:33|DEBUG|Saved to bank.db
+2023-10-20 19:22:35|DEBUG|Created transaction: 4, 10
+2023-10-20 19:22:35|DEBUG|Saved to bank.db
+2023-10-20 19:38:11|DEBUG|Loaded from bank.db
+2023-10-20 19:38:11|DEBUG|Saved to bank.db
+2023-10-20 19:38:57|DEBUG|Loaded from bank.db
+2023-10-20 19:38:57|DEBUG|Saved to bank.db
+2023-10-20 19:44:24|DEBUG|Loaded from bank.db
+2023-10-20 19:44:24|DEBUG|Saved to bank.db
+2023-10-20 19:45:20|DEBUG|Loaded from bank.db
+2023-10-20 19:45:20|DEBUG|Saved to bank.db
+2023-10-20 19:45:34|DEBUG|Loaded from bank.db
+2023-10-20 19:45:34|DEBUG|Saved to bank.db
+2023-10-20 19:45:53|DEBUG|Created transaction: 1, 200
+2023-10-20 19:45:53|DEBUG|Saved to bank.db
+2023-10-20 19:45:58|DEBUG|Created transaction: 1, 710.381250
+2023-10-20 19:47:32|DEBUG|Loaded from bank.db
+2023-10-20 19:47:32|DEBUG|Saved to bank.db
+2023-10-20 20:20:52|DEBUG|Loaded from bank.db
+2023-10-20 20:20:52|DEBUG|Saved to bank.db
+2023-10-20 20:31:57|DEBUG|Loaded from bank.db
+2023-10-20 20:31:57|DEBUG|Saved to bank.db
+2023-10-20 20:32:32|DEBUG|Created account: 14
+2023-10-20 20:32:41|DEBUG|Created account: 15
+2023-10-20 20:34:20|DEBUG|Loaded from bank.db
+2023-10-20 20:34:20|DEBUG|Saved to bank.db
+2023-10-20 20:34:24|DEBUG|Created account: 16
+2023-10-20 20:34:47|DEBUG|Created transaction: 1, 1
+2023-10-20 20:34:47|DEBUG|Saved to bank.db
+2023-10-20 20:34:50|DEBUG|Created transaction: 1, 710.950355
+2023-10-20 20:34:50|DEBUG|Triggered interest and fees
+2023-10-20 20:34:50|DEBUG|Saved to bank.db
+2023-10-20 20:35:09|DEBUG|Created account: 17
+2023-10-20 20:35:16|DEBUG|Loaded from bank.db
+2023-10-20 20:35:16|DEBUG|Saved to bank.db
+2023-10-20 20:35:31|DEBUG|Created transaction: 1, -3939
+2023-10-20 20:35:31|DEBUG|Saved to bank.db
+2023-10-20 20:35:35|DEBUG|Created transaction: 1, 708.367915
+2023-10-20 20:35:35|DEBUG|Triggered interest and fees
+2023-10-20 20:35:35|DEBUG|Saved to bank.db
+2023-10-20 20:43:23|DEBUG|Loaded from bank.db
+2023-10-20 20:43:23|DEBUG|Saved to bank.db
+2023-10-20 20:44:41|DEBUG|Loaded from bank.db
+2023-10-20 20:44:41|DEBUG|Saved to bank.db
+2023-10-20 20:45:16|DEBUG|Loaded from bank.db
+2023-10-20 20:45:16|DEBUG|Saved to bank.db
+2023-10-20 20:46:13|DEBUG|Loaded from bank.db
+2023-10-20 20:46:13|DEBUG|Saved to bank.db
+2023-10-20 20:48:43|DEBUG|Loaded from bank.db
+2023-10-20 20:48:43|DEBUG|Saved to bank.db
+2023-10-20 21:10:49|DEBUG|Created account: 18
+2023-10-20 21:12:13|DEBUG|Saved to bank.db
+2023-10-20 21:12:16|DEBUG|Created account: 1
+2023-10-20 21:12:29|DEBUG|Created account: 2
+2023-10-20 21:13:10|DEBUG|Loaded from bank.db
+2023-10-20 21:13:10|DEBUG|Saved to bank.db
+2023-10-20 21:18:24|DEBUG|Loaded from bank.db
+2023-10-20 21:18:24|DEBUG|Saved to bank.db
+2023-10-20 21:18:27|DEBUG|Created account: 3
+2023-10-20 21:18:34|DEBUG|Created account: 4
+2023-10-20 21:19:51|DEBUG|Loaded from bank.db
+2023-10-20 21:19:51|DEBUG|Saved to bank.db
+2023-10-20 21:20:06|DEBUG|Created transaction: 4, 200
+2023-10-20 21:20:06|DEBUG|Saved to bank.db
+2023-10-20 21:20:43|DEBUG|Loaded from bank.db
+2023-10-20 21:20:43|DEBUG|Saved to bank.db
+2023-10-20 21:21:27|DEBUG|Loaded from bank.db
+2023-10-20 21:21:27|DEBUG|Saved to bank.db
+2023-10-20 21:21:38|DEBUG|Created transaction: 3, 11
+2023-10-20 21:21:38|DEBUG|Saved to bank.db
+2023-10-20 21:21:45|DEBUG|Loaded from bank.db
+2023-10-20 21:21:45|DEBUG|Saved to bank.db
+2023-10-20 21:23:49|DEBUG|Created transaction: 4, 2000
+2023-10-20 21:23:49|DEBUG|Saved to bank.db
+2023-10-20 21:27:57|DEBUG|Loaded from bank.db
+2023-10-20 21:27:57|DEBUG|Saved to bank.db
+2023-10-20 21:28:03|DEBUG|Created transaction: 4, 1.76000000
+2023-10-20 21:28:03|DEBUG|Triggered interest and fees
+2023-10-20 21:28:03|DEBUG|Saved to bank.db
+2023-10-20 21:28:17|DEBUG|Created transaction: 4, 200
+2023-10-20 21:28:17|DEBUG|Saved to bank.db
+2023-10-20 21:29:06|DEBUG|Loaded from bank.db
+2023-10-20 21:29:06|DEBUG|Saved to bank.db
+2023-10-20 21:29:14|DEBUG|Created transaction: 4, 22
+2023-10-20 21:29:14|DEBUG|Saved to bank.db
+2023-10-20 21:29:18|DEBUG|Created transaction: 4, 1.93900800
+2023-10-20 21:29:18|DEBUG|Triggered interest and fees
+2023-10-20 21:29:18|DEBUG|Saved to bank.db
+2023-10-20 21:29:34|DEBUG|Created account: 5
+2023-10-20 21:29:43|DEBUG|Created transaction: 3, 0.0451000000
+2023-10-20 21:29:43|DEBUG|Triggered interest and fees
+2023-10-20 21:29:43|DEBUG|Saved to bank.db
+2023-10-20 21:30:06|DEBUG|Created account: 6
+2023-10-20 21:32:45|DEBUG|Loaded from bank.db
+2023-10-20 21:32:45|DEBUG|Saved to bank.db
+2023-10-20 21:32:59|DEBUG|Created transaction: 1, 1000
+2023-10-20 21:32:59|DEBUG|Saved to bank.db
+2023-10-20 21:45:12|DEBUG|Saved to bank.db
+2023-10-20 21:45:13|DEBUG|Account list created
+2023-10-20 21:45:15|DEBUG|Created account: 1
+2023-10-20 21:45:28|DEBUG|Created transaction: 1, 2000
+2023-10-20 21:45:28|DEBUG|Saved to bank.db
+2023-10-20 21:47:43|DEBUG|Loaded from bank.db
+2023-10-20 21:47:43|DEBUG|Saved to bank.db
+2023-10-20 21:47:43|DEBUG|Account list created
+2023-10-20 21:47:56|DEBUG|Created account: 2
+2023-10-20 22:00:17|DEBUG|Loaded from bank.db
+2023-10-20 22:00:17|DEBUG|Saved to bank.db
+2023-10-20 22:00:17|DEBUG|Account list created
+2023-10-20 22:00:26|DEBUG|Created account: 3
+2023-10-20 22:00:55|DEBUG|Loaded from bank.db
+2023-10-20 22:00:55|DEBUG|Saved to bank.db
+2023-10-20 22:00:55|DEBUG|Account list created
+2023-10-20 22:01:04|DEBUG|Created transaction: 3, 20000
+2023-10-20 22:01:04|DEBUG|Saved to bank.db
+2023-10-20 22:01:09|DEBUG|Created transaction: 3, 16.0000000
+2023-10-20 22:01:09|DEBUG|Triggered interest and fees
+2023-10-20 22:01:09|DEBUG|Saved to bank.db
+2023-10-20 22:01:16|DEBUG|Created account: 4
+2023-10-20 22:01:21|DEBUG|Created transaction: 4, 20000
+2023-10-20 22:01:21|DEBUG|Saved to bank.db
+2023-10-24 23:35:19|DEBUG|Loaded from bank.db
+2023-10-24 23:35:19|DEBUG|Saved to bank.db
+2023-10-24 23:35:19|DEBUG|Account list created
+2023-10-24 23:35:22|DEBUG|Created account: 5
+2023-10-24 23:35:29|DEBUG|Created transaction: 5, 1000
+2023-10-24 23:35:29|DEBUG|Saved to bank.db
+2023-10-24 23:35:32|DEBUG|Created transaction: 1, 1.60000000
+2023-10-24 23:35:32|DEBUG|Triggered interest and fees
+2023-10-24 23:35:32|DEBUG|Saved to bank.db
